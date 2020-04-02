@@ -37,9 +37,10 @@ class LoginController extends Controller
      */
     public function postLogin(Request $request)
     {
+        $table = config('admin.database.users_table');
         $credentials = $request->only(['username', 'password']);
         $validator = Validator::make($credentials, [
-            'username' => 'required|string|exists:admin_users,username,enabled,1',
+            'username' => 'required|string|exists:'.$table.',username,enabled,1',
             'password'        => 'required|string',
         ]);
 
