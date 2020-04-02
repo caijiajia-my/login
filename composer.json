@@ -5,7 +5,7 @@
     "keywords": ["laravel-admin", "extension", "login"],
     "homepage": "https://github.com/caijiajia-my/login",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "caijiajia.my",
